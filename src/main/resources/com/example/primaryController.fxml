@@ -56,7 +56,7 @@
             <Insets bottom="50.0" />
          </VBox.margin>
       </Label>
-      <Button fx:id="startButton" mnemonicParsing="false" prefHeight="81.0" prefWidth="256.0" style="-fx-background-color: black;" text="Start" textFill="#1fc651">
+      <Button fx:id="startButton" mnemonicParsing="false" onAction="#switchToSecondary" prefHeight="81.0" prefWidth="256.0" style="-fx-background-color: black;" text="Start" textFill="#1fc651">
          <VBox.margin>
             <Insets bottom="30.0" />
          </VBox.margin>
@@ -64,7 +64,7 @@
             <Font size="36.0" />
          </font>
       </Button>
-      <Button fx:id="storeButton" mnemonicParsing="false" prefHeight="81.0" prefWidth="256.0" style="-fx-background-color: black;" text="Store" textFill="#f8f82c">
+      <Button fx:id="storeButton" mnemonicParsing="false" onAction="#switchToThirtiary" prefHeight="81.0" prefWidth="256.0" style="-fx-background-color: black;" text="Store" textFill="#f8f82c">
          <VBox.margin>
             <Insets bottom="30.0" />
          </VBox.margin>
