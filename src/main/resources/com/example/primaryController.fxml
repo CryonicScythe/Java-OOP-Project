@@ -64,7 +64,7 @@
             <Font size="36.0" />
          </font>
       </Button>
-      <Button fx:id="storeButton" mnemonicParsing="false" onAction="#switchToThirtiary" prefHeight="81.0" prefWidth="256.0" style="-fx-background-color: black;" text="Store" textFill="#f8f82c">
+      <Button fx:id="storeButton" mnemonicParsing="false" prefHeight="81.0" prefWidth="256.0" style="-fx-background-color: black;" text="Store" textFill="#f8f82c">
          <VBox.margin>
             <Insets bottom="30.0" />
          </VBox.margin>
