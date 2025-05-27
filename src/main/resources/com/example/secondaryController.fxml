@@ -65,7 +65,7 @@
                   <Insets bottom="20.0" />
                </VBox.margin>
             </Button>
-            <Button fx:id="escapeButton" mnemonicParsing="false" onAction="#switchToPrimary" prefHeight="67.0" prefWidth="212.0" style="-fx-background-color: black;" text="Escape" textAlignment="CENTER" textFill="#ff4400">
+            <Button fx:id="escapeButton" mnemonicParsing="false" onAction="#switchToPrimary" prefHeight="67.0" prefWidth="212.0" style="-fx-background-color: black;" text="Escape" textAlignment="CENTER" textFill="#ffaf00">
                <font>
                   <Font size="28.0" />
                </font>

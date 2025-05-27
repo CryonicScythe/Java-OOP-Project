@@ -8,7 +8,7 @@ import javafx.scene.control.Label;
 public class SecondaryController {
 
     @FXML
-    Label outpLabel = new Label();
+    Label outputLabel = new Label();
 
     @FXML
     Button fightButton = new Button();

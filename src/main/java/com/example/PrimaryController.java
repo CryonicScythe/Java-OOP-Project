@@ -23,4 +23,9 @@ public class PrimaryController {
     private void switchToThirtiary() throws IOException {
         App.setRoot("thirtiaryController");
     }
+
+    @FXML
+    private void switchToQuadriary() throws IOException {
+        App.setRoot("quadriaryController");
+    }
 }

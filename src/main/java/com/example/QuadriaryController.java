@@ -5,22 +5,23 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 
-public class ThirtiaryController {
+public class QuadriaryController {
 
     @FXML
     Label outputLabel = new Label();
 
     @FXML
-    Button buyButton = new Button();
+    Button nextButton = new Button();
 
     @FXML
-    Button sellButton = new Button();
+    Button selectButton = new Button();
 
     @FXML
-    Button escapeButton = new Button();
-    
+    Button leaveButton = new Button();
+
     @FXML
     private void switchToPrimary() throws IOException {
         App.setRoot("primaryController");
     }
+    
 }

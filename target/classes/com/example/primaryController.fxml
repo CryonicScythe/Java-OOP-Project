@@ -72,7 +72,7 @@
             <Font size="36.0" />
          </font>
       </Button>
-      <Button fx:id="inventoryButton" mnemonicParsing="false" prefHeight="81.0" prefWidth="256.0" style="-fx-background-color: black; -fx-background-radius: 2;" text="Inventory" textFill="#5d93ff">
+      <Button fx:id="inventoryButton" mnemonicParsing="false" onAction="#switchToQuadriary" prefHeight="81.0" prefWidth="256.0" style="-fx-background-color: black; -fx-background-radius: 2;" text="Inventory" textFill="#5d93ff">
          <font>
             <Font size="36.0" />
          </font>
