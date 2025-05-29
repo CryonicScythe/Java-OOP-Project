@@ -8,6 +8,8 @@ import javafx.scene.control.Label;
 
 public class QuadriaryController {
 
+    int index = 0;
+
     ItemCreater.addItem("Gold Bar", "V", 5000);
     ItemCreater.addItem("Steel Sword", "W", 800, 16);
     ItemCreater.addItem("Potion", "B", 300);
@@ -28,6 +30,21 @@ public class QuadriaryController {
     @FXML
     private void switchToPrimary() throws IOException {
         App.setRoot("primaryController");
+    }
+
+    @FXML
+    private void nextItem() throws IOException {
+        index += 1;
+        if (index >= (ItemCreater.bagList.size() - 1)) {
+            index = 0;
+        }
+    }
+
+    @FXML
+    private void displayItem() throws IOException {
+        Item selected = ItemCreater.bagList.get(index);
+        System.out.println(selected.itemName());
+        System.out.println(selected.itemValue());
     }
     
 }
