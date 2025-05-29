@@ -19,8 +19,20 @@ public class ThirtiaryController {
     @FXML
     Button escapeButton = new Button();
     
+    // Returns to the main menu
     @FXML
     private void switchToPrimary() throws IOException {
         App.setRoot("primaryController");
     }
+
+    @FXML
+    private void printStore() throws IOException {
+
+
+        for (int i = 1; i <= ItemCreater.storeList.size(); i++) {
+            Item purchasable = ItemCreater.storeList.get(i - 1);
+            System.out.println(i + ". " + purchasable.itemName());
+        }
+    }
+
 }

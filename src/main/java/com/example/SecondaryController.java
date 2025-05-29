@@ -13,6 +13,7 @@ public class SecondaryController {
     @FXML
     Button fightButton = new Button();
 
+    // Returns to the main menu
     @FXML
     Button escapeButton = new Button();
 

@@ -57,7 +57,7 @@
       </Label>
       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
          <children>
-            <Button fx:id="buyButton" mnemonicParsing="false" prefHeight="67.0" prefWidth="212.0" style="-fx-background-color: black;" text="Buy" textAlignment="CENTER" textFill="#fff300">
+            <Button fx:id="buyButton" mnemonicParsing="false" onAction="#printStore" prefHeight="67.0" prefWidth="212.0" style="-fx-background-color: black;" text="Buy" textAlignment="CENTER" textFill="#fff300">
                <font>
                   <Font size="28.0" />
                </font>

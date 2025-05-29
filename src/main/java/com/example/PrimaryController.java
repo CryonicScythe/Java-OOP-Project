@@ -14,16 +14,19 @@ public class PrimaryController {
     @FXML
     Button inventoryButton = new Button();
     
+    // Switches to the battle page
     @FXML
     private void switchToSecondary() throws IOException {
         App.setRoot("secondaryController");
     }
 
+    // Switches to the store page
     @FXML
     private void switchToThirtiary() throws IOException {
         App.setRoot("thirtiaryController");
     }
 
+    // Switches to the inventory page
     @FXML
     private void switchToQuadriary() throws IOException {
         App.setRoot("quadriaryController");

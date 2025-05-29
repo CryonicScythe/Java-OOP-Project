@@ -19,4 +19,20 @@ public class Item {
         this.type = type;
         this.value = value;
     }
+
+    public String itemName(){
+        return this.name;
+    }
+
+    public String itemType(){
+        return this.type;
+    }
+
+    public int itemValue(){
+        return this.value;
+    }
+
+    public int itemDamage(){
+        return this.damage;
+    }
 }

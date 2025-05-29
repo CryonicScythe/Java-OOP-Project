@@ -8,6 +8,10 @@ import javafx.scene.control.Label;
 
 public class QuadriaryController {
 
+    ItemCreater.addItem("Gold Bar", "V", 5000);
+    ItemCreater.addItem("Steel Sword", "W", 800, 16);
+    ItemCreater.addItem("Potion", "B", 300);
+
     @FXML
     Label outputLabel = new Label();
 
@@ -17,6 +21,7 @@ public class QuadriaryController {
     @FXML
     Button selectButton = new Button();
 
+    // Returns to the main menu
     @FXML
     Button leaveButton = new Button();
 
