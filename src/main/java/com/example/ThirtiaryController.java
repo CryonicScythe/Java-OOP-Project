@@ -27,11 +27,9 @@ public class ThirtiaryController {
 
     @FXML
     private void printStore() throws IOException {
-
-
         for (int i = 1; i <= ItemCreater.storeList.size(); i++) {
             Item purchasable = ItemCreater.storeList.get(i - 1);
-            System.out.println(i + ". " + purchasable.itemName());
+            outputLabel.setText(outputLabel.getText() + i + ". " + purchasable.itemName() + "\n");
         }
     }
 

@@ -43,8 +43,10 @@ public class QuadriaryController {
     @FXML
     private void displayItem() throws IOException {
         Item selected = ItemCreater.bagList.get(index);
-        System.out.println(selected.itemName());
-        System.out.println(selected.itemValue());
+
+        String output = "";
+        output += selected.itemName() + selected.itemValue();
+        outputLabel.setText(outputLabel.getText() + output + "\n");
     }
     
 }
