@@ -7,6 +7,8 @@ import javafx.scene.control.Label;
 
 public class ThirtiaryController {
 
+    StoreCreator inventory = new StoreCreator();
+
     @FXML
     Label outputLabel = new Label();
 
@@ -27,8 +29,8 @@ public class ThirtiaryController {
 
     @FXML
     private void printStore() throws IOException {
-        for (int i = 1; i <= ItemCreater.storeList.size(); i++) {
-            Item purchasable = ItemCreater.storeList.get(i - 1);
+        for (int i = 1; i <= inventory.storeList.size(); i++) {
+            Item purchasable = inventory.storeList.get(i - 1);
             outputLabel.setText(outputLabel.getText() + i + ". " + purchasable.itemName() + "\n");
         }
     }
