@@ -8,11 +8,12 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.paint.Color;
 
 public class QuadriaryController implements Initializable {
 
     int index = 0;
-    ItemCreater inventory = new ItemCreater();
+    public ItemCreater inventory = new ItemCreater();
 
     @FXML
     Label outputLabel = new Label();
@@ -23,7 +24,6 @@ public class QuadriaryController implements Initializable {
     @FXML
     Button selectButton = new Button();
 
-    // Returns to the main menu
     @FXML
     Button leaveButton = new Button();
 
@@ -34,29 +34,39 @@ public class QuadriaryController implements Initializable {
         inventory.addItem("Potion", "B", 300);
     }
 
+    // Returns to the main menu
     @FXML
     private void switchToPrimary() throws IOException {
         App.setRoot("primaryController");
     }
 
+    // Switches to the next item in the inventory list
     @FXML
     private void nextItem() throws IOException {
         index += 1;
-        if (index >= (inventory.bagList.size() - 1)) {
+        if (index > (inventory.bagList.size() - 1)) {
             index = 0;
         }
 
         Item selected = inventory.bagList.get(index);
+        outputLabel.setText("Number of items in inventory: " + inventory.bagList.size() + "\n");
+        outputLabel.setText(outputLabel.getText() + "Item placement: " + (index + 1) + "\n");
         outputLabel.setText(outputLabel.getText() + "Currently selected: " + selected.itemName() + "\n");
     }
 
+    // Diplays the currently selected item in the inventory
     @FXML
     private void displayItem() throws IOException {
         Item selected = inventory.bagList.get(index);
 
-        String output = "";
-        output += selected.itemName() + selected.itemValue();
-        outputLabel.setText(outputLabel.getText() + output + "\n");
+        String outputName = "";
+        String outputStats = "";
+
+        outputName += selected.itemName();
+        outputLabel.setTextFill(Color.GOLD);
+        outputStats += "; Value: " + selected.itemValue();
+        outputLabel.setTextFill(Color.BLACK);
+        outputLabel.setText(outputLabel.getText() + outputName + outputStats + "\n");
     }
     
 }

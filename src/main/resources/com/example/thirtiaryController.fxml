@@ -41,7 +41,7 @@
 
 <VBox prefHeight="601.0" prefWidth="463.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ThirtiaryController">
    <children>
-      <Label fx:id="outputLabel" prefHeight="274.0" prefWidth="463.0">
+      <Label fx:id="outputLabel" alignment="TOP_LEFT" contentDisplay="TOP" prefHeight="274.0" prefWidth="463.0">
          <font>
             <Font name="System Bold" size="22.0" />
          </font>
@@ -57,7 +57,7 @@
       </Label>
       <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
          <children>
-            <Button fx:id="buyButton" mnemonicParsing="false" onAction="#printStore" prefHeight="67.0" prefWidth="212.0" style="-fx-background-color: black;" text="Buy" textAlignment="CENTER" textFill="#fff300">
+            <Button fx:id="buyButton" mnemonicParsing="false" onAction="#buyItem" prefHeight="67.0" prefWidth="212.0" style="-fx-background-color: black;" text="Buy" textAlignment="CENTER" textFill="#fff300">
                <font>
                   <Font size="28.0" />
                </font>
@@ -65,7 +65,7 @@
                   <Insets bottom="20.0" />
                </VBox.margin>
             </Button>
-            <Button fx:id="sellButton" mnemonicParsing="false" prefHeight="67.0" prefWidth="212.0" style="-fx-background-color: black;" text="Sell" textAlignment="CENTER" textFill="#fff300">
+            <Button fx:id="sellButton" mnemonicParsing="false" onAction="#nextItem" prefHeight="67.0" prefWidth="212.0" style="-fx-background-color: black;" text="Next" textAlignment="CENTER" textFill="#0aff00">
                <font>
                   <Font size="28.0" />
                </font>
